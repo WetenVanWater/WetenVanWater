@@ -1,0 +1,152 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f3f3f3;
+}
+
+header {
+    background: #2A7CC9;
+    color: #fff;
+    padding: 0;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    position: sticky;
+    top: 0;
+}
+
+header .container {
+    position: relative;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header h1 {
+    margin: 0;
+    margin-left: 40px;
+}
+
+nav {
+    background: #9FCBFD;
+    width: 100%;
+}
+
+nav .container{
+    position: relative;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #000;
+    font-size: large;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    background: #fff;
+    z-index: 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 25px;
+}
+
+section h3 {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.content-image {
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adjust as needed */
+    object-fit: cover;
+}
+
+.content-image-container {
+    background-color: #9FCBFD;
+    border-radius: 10px; /* Adjust as needed */
+    display: inline-block;
+    padding: 10px; /* Adjust as needed */
+    margin-bottom: 15px;
+}
+
+.image-source {
+    font-size: 0.8em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* For larger screens */
+@media (min-width: 600px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    main {
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    section {
+        flex: 1;
+        margin: 0 10px;
+        font-size: 1.2em;
+    }
+}
